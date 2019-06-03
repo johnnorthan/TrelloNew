@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(200, 128, 255);
+}
+
+.heading {
+    background-color: brown;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-column-gap: 50px;
+    justify-items: start;
+    align-items: start;
+    align-content: start;
+}
+
+.heading .search {
+    background-color: rgb(255, 115, 220);
+    width: 200px;
+}
+
+.heading .title {
+    color: white; 
+    font-size: 25px;
+}
+
+.projects {
+    padding-left: 25px;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-column-gap: 50px; 
+    grid-template-areas: "futureCol activeCol completedCol";
+    height: 500px;
+}
+
+.future {
+    grid-area: futureCol;    
+    background-color: white;
+}
+
+.container1 {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-row-gap: 10px; 
+    grid-template-areas: "a"
+                         "b"
+                         "c";
+    width: 450px;
+    justify-content: center;
+}
+
+.a {
+    grid-area: a;
+    background-color: aqua;
+    height:100px;
+    width: 400px;
+}
+
+.b {
+    grid-area: b;
+    background-color: bisque
+}
+
+.c {
+    grid-area: c;
+    background-color: chartreuse;
+}
+
+.active {
+    grid-area: activeCol;
+    background-color: bisque;
+}
+
+.container2 {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-row-gap: 10px; 
+    grid-template-areas: "d"
+                         "e"
+                         "f";
+}
+
+.d {
+    grid-area: d;
+    background-color: aqua;
+    height:100px;
+}
+
+.e {
+    grid-area: e;
+    background-color: bisque
+}
+
+.f {
+    grid-area: f;
+    background-color: chartreuse;
+}
+
+/*
+*/
